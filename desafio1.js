@@ -1,20 +1,17 @@
+let edad = Number(prompt("Ingrese una edad"))
+let cont = 1
+let prome = 0
+let resul = 0
 
-let num = Number(prompt("Ingrese el numero a multiplicar"))
-
-for (let i = 1; i <= 10 ; i++) {
-
-    resul = num * i;
-    alert(`el resultad de ${num} x ${i} es ${resul}`);
+for (i = 0; i = 1 ; cont = cont + 1){
+    if (edad <= 1)
+    resul = edad + resul
     
-    if (i === 10){
-        let usuario = prompt(" si desea multiplicar otro numero, ingreselo, de lo contario escriba esc")
-        if (usuario === "esc"){
-            alert("gracias")
-            break
-        }else{
-            num = usuario
-            i = 0
-            continue
-        }
-    } 
+    edad = prompt("ingrese otra edad o esc para terminar")
+    if (edad === "esc"){
+        i = 1
+    }
 }
+prome = resul / cont
+alert(`el promedio es ${prome}`)
+
